@@ -1,0 +1,32 @@
+% main.tex
+
+\documentclass{../.typesetting/class/a6_main}
+% \documentclass{class/b5_main.cls}
+
+\usepackage{import}
+\usepackage{../.typesetting/style/font}
+\usepackage{../.typesetting/style/a6_cmds}
+\usepackage{../.typesetting/specify/a6_pagestyle}
+
+\begin{document}
+
+    \setcounter{tocdepth}{1}
+    \tableofcontents
+    \thispagestyle{empty}
+
+    \clearpage
+
+    \thispagestyle{empty}
+    \null\vfill
+    \begin{center}
+        この移ろいゆく『時と情報』の濁流の中であなたと出会えたことを幸せに思う
+    \end{center}
+    \vfill\null
+
+    \part{\tatechuyoko{I}}
+
+    % \subinputfrom{../../../../manuscripts/}{1.tex}
+
+    \cleardoublepage
+
+\end{document}

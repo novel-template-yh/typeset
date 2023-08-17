@@ -1,0 +1,29 @@
+% .typesetting/style/font.sty
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{font}
+
+\RequirePackage{luatexja-fontspec, luatexja-otf, luatexja-ruby}
+
+% フォント設定
+
+\setsansfont[
+    UprightFont = {*-Roman},
+    BoldFont = {*-Roman},
+    FontFace = {eb}{\shapedefault}{*-Roman},
+    Script = Default
+]{GenEiNombre}
+
+\setmainjfont[
+    UprightFont={*-Regular.ttf},
+    BoldFont={*-Bold.ttf},
+    FontFace={eb}{\shapedefault}{*-Regular.ttf},
+    Script=Default
+]{ShipporiMincho}
+
+\setsansjfont[
+    UprightFont = {*-Regular},
+    BoldFont = {*-Bold},
+    FontFace = {eb}{\shapedefault}{*-Bold},
+    Script = Default
+]{HackGenConsoleNF}

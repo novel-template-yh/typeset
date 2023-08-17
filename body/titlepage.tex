@@ -1,0 +1,29 @@
+% titlepage.tex
+
+\documentclass{../.typesetting/class/a6_titlepage}
+% \documentclass{class/b5_main.cls}
+
+\usepackage{import}
+\usepackage{../.typesetting/style/font}
+\usepackage{../.typesetting/style/a6_cmds}
+\usepackage{../.typesetting/specify/a6_pagestyle}
+
+\begin{document}
+
+    \pagestyle{empty}
+
+    % number rule
+    % {発行年二桁}
+    % {1 or 2 (次創作)}
+    % {3 or 4 <-> 短編集 or 長編}
+    % {5 or 6 <-> 単独 or 合同}{発行順番号}
+
+    \begin{center}
+        \begin{framed}
+            \vspace{7mm}
+            \novelTitleWindow{No.2038}{I}{231453}
+            \vspace{49mm}
+        \end{framed}
+    \end{center}
+
+\end{document}

@@ -1,0 +1,5 @@
+# .editorconfig for cats-novel
+
+root = true
+
+[*]

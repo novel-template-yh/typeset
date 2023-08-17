@@ -1,0 +1,38 @@
+% colophon.tex
+
+\documentclass{../.typesetting/class/a6_titlepage}
+% \documentclass{class/b5_main.cls}
+
+\usepackage{import}
+\usepackage{../.typesetting/style/font}
+\usepackage{../.typesetting/style/a6_cmds}
+\usepackage{../.typesetting/specify/a6_pagestyle}
+
+\begin{document}
+
+    \pagestyle{empty}
+
+    \begin{center}
+        \begin{framed}
+            \vspace{7mm}
+            \novelTitleWindow{Title}{subtitle}{231453}
+            \\
+            \vspace{1mm}
+            \novelInfoWindow
+                {令和Ｙ年Ｍ月Ｎ日 & 第初版}
+                {
+                    & something\\
+                }
+                {
+                    & \\
+                }
+                {
+                    \copyright Yuni Hutsuka
+                }
+            \\
+            \vspace{1mm}
+            \novelCopyrights{2024}
+        \end{framed}
+    \end{center}
+
+\end{document}

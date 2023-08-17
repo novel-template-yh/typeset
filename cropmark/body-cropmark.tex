@@ -1,0 +1,34 @@
+% body-cropmark.tex
+
+\documentclass[paper=a6]{jlreq}
+
+\usepackage{pdfpages}
+
+\usepackage[
+    lualatex,
+    show={trimmarks, banner, digital},
+    bleed_margin={top=3mm, bottom=3mm, gutter=3mm, fore-edge=3mm}
+]{jlreq-trimmarks}
+
+\jlreqtrimmarkssetup{
+    banner={
+        top-left={
+            yoko={}
+        },
+        top-right={
+            yoko={}
+        },
+        bottom-left={
+            yoko={}
+        },
+        bottom-right={
+            yoko={}
+        },
+    }
+}
+
+\begin{document}
+
+    \includepdf[pages=-, offset=1in -1in]{body.pdf}
+
+\end{document}
